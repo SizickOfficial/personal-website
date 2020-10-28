@@ -1,0 +1,57 @@
+
+
+.overlay nav {
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    position: relative;
+    top: 50%;
+    height: 60%;
+  }
+  
+  /* Effects */
+  .overlay-corner {
+    -moz-transition-property: opacity, -moz-transform, visibility;
+    -o-transition-property: opacity, -o-transform, visibility;
+    -webkit-transition-property: opacity, -webkit-transform, visibility;
+    transition-property: opacity, transform, visibility;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -moz-transform: translateY(50px) translateX(50px);
+    -ms-transform: translateY(50px) translateX(50px);
+    -webkit-transform: translateY(50px) translateX(50px);
+    transform: translateY(50px) translateX(50px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .overlay-corner.open {
+    -moz-transition-property: opacity, -moz-transform;
+    -o-transition-property: opacity, -o-transform;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, transform;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .btn-nav {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #000;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    outline: none;
+    padding: 5px 10px;
+  }
+  
